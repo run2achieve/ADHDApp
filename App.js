@@ -185,7 +185,6 @@ export default function ADHDSelfRatingScreen() {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      Alert.alert("Assessment Complete", "You've finished all questions!");
       setShowResults(true);
     }
   };
@@ -254,17 +253,15 @@ export default function ADHDSelfRatingScreen() {
       <SafeAreaView style={styles.container}>
         <StatusBar barStyle="light-content" backgroundColor="#3b82f6" />
         
-        {/* Top Banner Ad Space */}
+        {/* Top Banner Space */}
         <View style={styles.topAdSpace}>
-          <Text style={styles.adPlaceholder}>Banner Ad Space</Text>
-          <Text style={styles.adSubtext}>Real ads will show here</Text>
+          <Text style={styles.adPlaceholder}>Banner Space (320x50)</Text>
         </View>
         
         <ScrollView style={styles.scrollView}>
           <View style={styles.headerGradient}>
             <Text style={styles.headerTitle}>ASRS-v1.1 Results</Text>
             <Text style={styles.headerSubtitle}>Your ADHD Self-Rating Scale Assessment</Text>
-            <Text style={styles.citation}>WHO & Harvard Medical School</Text>
           </View>
 
           <View style={styles.resultsContainer}>
@@ -314,13 +311,13 @@ export default function ADHDSelfRatingScreen() {
                   <Text style={styles.citationBold}>ASRS-v1.1:</Text> Adult ADHD Self-Report Scale (ASRS-v1.1) Screener and Symptoms Checklist
                 </Text>
                 <Text style={styles.citationText}>
-                  <Text style={styles.citationBold}>Source:</Text> World Health Organization (WHO) and Harvard Medical School
+                  <Text style={styles.citationBold}>Source:</Text> The ASRS v1.1 Screener is a tool developed by the World Health Organization (WHO) in collaboration with the Workgroup on Adult ADHD, and is used here under appropriate acknowledgment.
                 </Text>
                 <Text style={styles.citationText}>
                   <Text style={styles.citationBold}>Reference:</Text> Kessler, R. C., Adler, L., Ames, M., et al. (2005). The World Health Organization Adult ADHD Self-Report Scale (ASRS): a short screening scale for use in the general population. Psychological Medicine, 35(2), 245-256.
                 </Text>
                 <Text style={styles.citationText}>
-                  <Text style={styles.citationBold}>Public Domain:</Text> This screener is in the public domain and may be reproduced without permission.
+                  <Text style={styles.citationBold}></Text> 
                 </Text>
               </View>
             </View>
@@ -330,17 +327,16 @@ export default function ADHDSelfRatingScreen() {
               <Text style={styles.resetButtonText}>Take Assessment Again</Text>
             </TouchableOpacity>
 
-            {/* Medium Rectangle Ad - shown after results */}
+            {/* Placeholder - shown between results sections */}
             <View style={styles.interstitialAdSpace}>
-              <Text style={styles.adPlaceholder}>Medium Rectangle Ad</Text>
-              <Text style={styles.adSubtext}>Real ads will show here</Text>
+              <Text style={styles.adPlaceholder}>Placeholder Space</Text>
+              <Text style={styles.adSubtext}>300x250 or Full Screen</Text>
             </View>
           </View>
 
-          {/* Bottom Banner Ad Space */}
+          {/* Bottom Banner Space */}
           <View style={styles.bottomAdSpace}>
-            <Text style={styles.adPlaceholder}>Banner Ad Space</Text>
-            <Text style={styles.adSubtext}>Real ads will show here</Text>
+            <Text style={styles.adPlaceholder}>Banner Space (320x50)</Text>
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -355,17 +351,15 @@ export default function ADHDSelfRatingScreen() {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#3b82f6" />
       
-      {/* Top Banner Ad Space */}
+      {/* Top Banner Space */}
       <View style={styles.topAdSpace}>
-        <Text style={styles.adPlaceholder}>Banner Ad Space</Text>
-        <Text style={styles.adSubtext}>Real ads will show here</Text>
+        <Text style={styles.adPlaceholder}>Banner Space (320x50)</Text>
       </View>
       
       <ScrollView style={styles.scrollView}>
         <View style={styles.headerGradient}>
           <Text style={styles.headerTitle}>ADHD Self-Rating Scale</Text>
           <Text style={styles.headerSubtitle}>ASRS-v1.1 Assessment</Text>
-          <Text style={styles.citation}>WHO & Harvard Medical School</Text>
           <View style={styles.progressContainer}>
             <View style={styles.progressInfo}>
               <Text style={styles.progressText}>
@@ -447,10 +441,9 @@ export default function ADHDSelfRatingScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Bottom Banner Ad Space */}
+        {/* Bottom Banner Space */}
         <View style={styles.bottomAdSpace}>
-          <Text style={styles.adPlaceholder}>Banner Ad Space</Text>
-          <Text style={styles.adSubtext}>Real ads will show here</Text>
+          <Text style={styles.adPlaceholder}>Banner Space (320x50)</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -712,7 +705,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   
-  // Ad Spaces
+  // Spaces
   topAdSpace: {
     height: 60,
     backgroundColor: '#f8f9fa',
@@ -731,7 +724,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   interstitialAdSpace: {
-    height: 250, // Medium Rectangle ad size
+    height: 120,
     backgroundColor: '#f8f9fa',
     justifyContent: 'center',
     alignItems: 'center',

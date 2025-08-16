@@ -10,21 +10,13 @@
       "backgroundColor": "#3b82f6",
       "resizeMode": "contain"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.yourname.adhdrating",
-      "buildNumber": "1"
+      "bundleIdentifier": "com.yourname.adhdrating"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#3b82f6"
-      },
-      "package": "com.yourname.adhdrating",
-      "versionCode": 1
+      "package": "com.yourname.adhdrating"
     },
     "web": {
       "favicon": "./assets/favicon.png"
